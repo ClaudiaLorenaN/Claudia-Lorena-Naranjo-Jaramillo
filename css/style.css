@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap");
+:root {
+    --primario: #8B48BF;
+    --colorSecundario: #FFFFFF;
+    --colorTercero: #242E52;
+  }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Be Vietnam Pro", sans-serif;
+  }
+
+/********** ESTILOS PARA EL HEADER **********/
+
+header{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 75.5px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+header nav ul li{
+    list-style: none;
+    padding-right: 28px;
+}
+  
+header nav ul li a{
+    color: var(--colorTercero);
+    text-decoration: none;   
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 23px;
+ 
+}
+header>a, .first-container-text>a, h5 {
+    height: 44px;
+    width: 134px;
+    border-radius: 50px;
+    padding: 10px;
+    background-color:var(--primario);
+    text-decoration: none;
+    color: var(--colorSecundario);
+    text-align: center;
+    
+
+}
+
+/********** ESTILOS PARA EL MAIN **********/
+.first-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 163.5px;
+    margin-bottom: 95px;
+}
+.first-container-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.first-container-text span{
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 57px;
+    text-align: right;
+    color: #232C50;
+}
+.first-container-text p{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+/******************second container*******************/
+
+.second-container{
+    display: flex;
+    background-color: var(--primario);
+    align-items: center;
+
+    /*height: 168px;
+    width: 1440px;*/
+    padding: 40px 0px 40px 0px;
+
+}
+.second-container h4{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 41px;
+    color: var(--colorSecundario);
+
+}
+.second-container p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--colorSecundario);
+
+}
+
+/******************third container*******************/
+.third-container{
+    padding: 40px 0px 40px 0px;
+    background-color: #FAFAFA ;
+}
+h5{
+    height: 43px;
+    width: 70px;
+    border-radius: 30px;
+    padding: 10px 25px 10px 25px;
+    margin-right: 23px;
+
+}
+
+.two-containers{
+    display: flex;
+    padding-bottom: 34px;
+    padding-left: 153px;
+}
+
+.title-parragraf{
+    display: flex;
+
+}
+h6{
+    padding-bottom: 18px;
+    padding-top: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px;
+    color: #323851;
+
+}
+
+.title-parragraf div p{
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #B3B2B7;
+
+}
+.third-container3{
+    padding-left: 455px;
+    padding-right: 455px;
+}
+
+/**************last container********************/
+
+.last-container-body{
+    position: relative;
+
+}
+h2{
+    text-align: center;
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 61px;
+    color:var(--colorTercero);
+    padding-bottom: 72px;
+    padding-top: 97px;
+    
+
+}
+.last-container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #FAFAFA ;
+    margin-bottom: 57px;
+        
+}
+h3{
+    text-align: center;
+    padding-bottom: 23px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    color:#3F4868;
+    margin-top: 40px;
+}
+section article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 220px;
+    width: 445px;
+    padding: 21px 15px 17px 27px ;
+    
+}
+section article img{
+    position: absolute;
+    top: 200px;
+}
+ .more>a{
+    
+    height: 44px;
+    width: 134px;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: var(--primario);    
+    text-decoration: none;
+    color: var(--colorSecundario);
+    text-align: center;
+}
+.more{
+    display:flex;
+    justify-content: center;       
+
+}
+
+
+/********** ESTILOS PARA EL FOOTER **********/
+.top-container-footer{
+    margin-top: 180px;
+    display: flex;
+    background-color: var(--primario);
+    align-items: center;
+    padding: 40px 0px 40px 0px;
+    justify-content: space-around;
+    height: 224px;
+}
+
+.top-container-footer h4{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 41px;
+    color: var(--colorSecundario);
+}
+
+.top-container-footer div{
+    background-color: var(--colorSecundario);
+    height: 44px;
+    width: 134px;
+    border-radius: 50px;
+    padding: 10px;   
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.top-container-footer a{
+    color: var(--primario);
+    text-decoration: none;
+
+}
+
+/***********************/
+
+.botton-container-footer{    
+    display: flex ;
+    background-color: #1E1E26;
+    padding-top: 54px;
+    padding-bottom: 54px;
+
+}
+
+.f-logo-redes{
+    display: flex;
+    flex-direction: column;
+    padding-left: 170px;
+}
+
+.redes-sociales{
+    display: flex;
+    align-items: center;
+    padding-top: 78px;
+    padding-left: 0;
+    
+}
+.redes-sociales img{
+    padding-right: 14px;
+}
+
+.redes-sociales li{
+    list-style: none;
+}
+
+.first-list-footer li{
+    list-style: none;
+    padding-left: 126px;
+    padding-right: 235px;
+    padding-bottom: 12px;
+    
+}
+
+.second-list-footer li{
+    list-style: none;
+    padding-right: 190px;
+
+}
+
+.first-list-footer li>a, .second-list-footer li>a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    color: var(--colorSecundario);
+
+}
+
+.form-copyright p{
+    color: #8C8C94;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    padding-top: 83px;
+
+}
+
+form input{
+    
+    height: 44px;
+    width: 201px;
+    border-radius: 50px;
+    padding: 10px;
+
+}
+.form-copyright button{
+    height: 42px;
+    width: 63px;
+    border-radius: 50px;
+    padding: 10px;
+    color: var(--colorSecundario);
+    background-color: var(--primario);
+
+}
+    
+
+
+
+/*******Responsive******/
