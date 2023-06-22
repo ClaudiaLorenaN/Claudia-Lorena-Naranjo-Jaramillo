@@ -59,6 +59,8 @@ header>a, .first-container-text>a, h5 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    width: 40%;
+    height: 461px;
 }
 .first-container-text span{
     display: block;
@@ -78,6 +80,10 @@ header>a, .first-container-text>a, h5 {
     padding-top: 28px;
     padding-bottom: 28px;
 }
+.first-container img{
+    width: 40%;
+    height: 461px;
+}
 
 /******************second container*******************/
 
@@ -89,6 +95,7 @@ header>a, .first-container-text>a, h5 {
     /*height: 168px;
     width: 1440px;*/
     padding: 40px 0px 40px 0px;
+    justify-content: space-around;
 
 }
 .second-container h4{
@@ -96,6 +103,7 @@ header>a, .first-container-text>a, h5 {
     font-weight: 700;
     line-height: 41px;
     color: var(--colorSecundario);
+    width: 30%;
 
 }
 .second-container p{
@@ -103,13 +111,15 @@ header>a, .first-container-text>a, h5 {
     font-weight: 500;
     line-height: 24px;
     color: var(--colorSecundario);
-
+    width: 30%;
 }
 
 /******************third container*******************/
 .third-container{
     padding: 40px 0px 40px 0px;
     background-color: #FAFAFA ;
+    display: flex;
+    flex-direction: column;
 }
 h5{
     height: 43px;
@@ -123,11 +133,19 @@ h5{
 .two-containers{
     display: flex;
     padding-bottom: 34px;
-    padding-left: 153px;
+    justify-content: center;
 }
 
 .title-parragraf{
     display: flex;
+    width: 45%;
+    padding-left: 40px;
+}
+
+.title-parragraf.third-container3{
+    display: flex;
+    justify-content: center;
+    align-self: center;
 
 }
 h6{
@@ -148,10 +166,10 @@ h6{
     color: #B3B2B7;
 
 }
-.third-container3{
+/*.third-container3{
     padding-left: 455px;
     padding-right: 455px;
-}
+}*/
 
 /**************last container********************/
 
@@ -191,9 +209,13 @@ section article{
     flex-direction: column;
     align-items: center;
     height: 220px;
-    width: 445px;
+    width: 30%;
     padding: 21px 15px 17px 27px ;
     
+}
+section article p{
+    color: #B3B2B7
+
 }
 section article img{
     position: absolute;
@@ -259,13 +281,13 @@ section article img{
     background-color: #1E1E26;
     padding-top: 54px;
     padding-bottom: 54px;
+    justify-content: space-around;
 
 }
 
 .f-logo-redes{
     display: flex;
     flex-direction: column;
-    padding-left: 170px;
 }
 
 .redes-sociales{
@@ -285,15 +307,12 @@ section article img{
 
 .first-list-footer li{
     list-style: none;
-    padding-left: 126px;
-    padding-right: 235px;
     padding-bottom: 12px;
     
 }
 
 .second-list-footer li{
     list-style: none;
-    padding-right: 190px;
 
 }
 
@@ -321,19 +340,118 @@ form input{
     width: 201px;
     border-radius: 50px;
     padding: 10px;
+    border: none;
 
 }
 .form-copyright button{
     height: 42px;
     width: 63px;
     border-radius: 50px;
+    border: none;
     padding: 10px;
     color: var(--colorSecundario);
     background-color: var(--primario);
 
 }
+.form-copyright{
+    padding-left: 10px;
+
+}
     
 
 
-
 /*******Responsive******/
+@media screen and (max-width: 480px){
+  
+    .first-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .first-container-text {
+        width: 95%;
+    }
+    .first-container img {
+        width: 95%;
+        padding-left: 10px;
+    }
+
+    .third-container {
+        padding-left: 20px;
+    }
+    
+    .second-container{
+        display: flex;
+        flex-direction: column;
+        background-color: #3CDDF3;
+
+    }
+    .second-container p, .second-container h4{
+        width: 400px;
+    }
+
+    .second-container h4{
+        padding-bottom: 25px;
+    }
+    .two-containers{
+        display: flex;
+        flex-direction: column;
+        padding-left: 5px;
+    }
+
+
+    .third-container3 {
+        padding-left: 35px; 
+        padding-right:5px;
+    }
+
+
+    .title-parragraf h5{
+        position: relative ;
+        bottom: -43px;
+        height: 43px;
+    }
+
+    .title-parragraf h6{
+        position: relative ;
+        right: -53px;
+        background-color:rgba(139, 72, 191, 0.3) ;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 23px;
+        padding-left: 30px;
+        height: 43px;
+        padding-bottom: 18px;
+        padding-top: 10px;
+
+    }
+    .title-parragraf p{
+        padding-top: 20px;
+        padding-right: 25px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+
+    }
+
+    .title-parragraf {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container-best{
+        display: none;
+    }
+
+    section article p{
+        width: 400px;
+    }
+    
+    .top-container-footer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+  
+  
+  }
