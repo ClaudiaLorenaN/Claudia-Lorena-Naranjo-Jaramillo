@@ -10,7 +10,8 @@
     font-family: "Be Vietnam Pro", sans-serif;
   }
 
-/********** ESTILOS PARA EL HEADER **********/
+@media only screen and (max-width: 1440px){
+    /********** ESTILOS PARA EL HEADER **********/
 
 header{
     display: flex;
@@ -37,7 +38,12 @@ header nav ul li a{
     font-size: 13px;
     font-weight: 500;
     line-height: 23px;
- 
+    cursor: pointer;
+}
+
+header nav ul li a:hover{
+    color: rgba(36, 46, 82, 0.60);
+
 }
 .menu-hamburger{
     display: none;
@@ -242,8 +248,8 @@ section article img{
     position: absolute;
     top: 200px;
 }
- .more>a{
-    
+
+.more>a{    
     height: 44px;
     width: 134px;
     border-radius: 50px;
@@ -252,6 +258,10 @@ section article img{
     text-decoration: none;
     color: var(--colorSecundario);
     text-align: center;
+}
+
+.more>a:hover{
+    background-color: rgba(139, 72, 191, 0.70);
 }
 .more{
     display:flex;
@@ -286,6 +296,7 @@ section article img{
     padding: 10px;   
     text-decoration: none;
     text-align: center;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
 
 }
 
@@ -394,6 +405,11 @@ form input{
     padding-left: 10px;
 
 }
+
+
+}
+
+
     
 
 
@@ -523,7 +539,7 @@ form input{
     }
 
     .top-container-footer div {
-        background-color: rgba(35, 44, 80, 1);
+        background-color: #232C50;
         box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
 
     }
